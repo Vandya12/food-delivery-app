@@ -1,0 +1,106 @@
+import { useState } from "react";
+import axios from "axios";
+
+function Signup() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const registerUser = async () => {
+    try {
+      const res = await axios.post("http://localhost:5000/register", {
+        name,
+        email,
+        password,
+      });
+
+      alert(res.data.message);
+
+      window.location.href = "/login";
+    } catch (err) {
+      console.log(err);
+
+      if (err.response && err.response.data.message) {
+        alert(err.response.data.message);
+      } else {
+        alert("Server error");
+      }
+    }
+  };
+
+  return (
+    <div style={styles.container}>
+      <div style={styles.card}>
+        <h1 style={styles.title}>Create Account</h1>
+
+        <input
+          type="text"
+          placeholder="Enter Name"
+          style={styles.input}
+          onChange={(e) => setName(e.target.value)}
+        />
+
+        <input
+          type="email"
+          placeholder="Enter Email"
+          style={styles.input}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+
+        <input
+          type="password"
+          placeholder="Enter Password"
+          style={styles.input}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+
+        <button style={styles.button} onClick={registerUser}>
+          Sign Up
+        </button>
+      </div>
+    </div>
+  );
+}
+
+const styles = {
+  container: {
+    height: "100vh",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    background: "linear-gradient(to right, #36d1dc, #5b86e5)",
+  },
+
+  card: {
+    background: "#fff",
+    padding: "40px",
+    borderRadius: "15px",
+    width: "350px",
+    display: "flex",
+    flexDirection: "column",
+    gap: "20px",
+    boxShadow: "0 6px 20px rgba(0,0,0,0.2)",
+  },
+
+  title: {
+    textAlign: "center",
+  },
+
+  input: {
+    padding: "12px",
+    borderRadius: "8px",
+    border: "1px solid #ccc",
+  },
+
+  button: {
+    padding: "12px",
+    border: "none",
+    borderRadius: "8px",
+    background: "#5b86e5",
+    color: "#fff",
+    cursor: "pointer",
+    fontSize: "16px",
+  },
+};
+
+export default Signup;
