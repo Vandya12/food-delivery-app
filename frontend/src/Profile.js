@@ -11,7 +11,7 @@ function Profile() {
     if (!user?.email) return;
 
     axios
-      .get(`http://localhost:5000/orders/${user.email}`)
+      .get(`https://food-delivery-app-j0eg.onrender.com/orders/${user.email}`)
       .then((res) => {
         setOrders(res.data);
       })
@@ -97,7 +97,7 @@ function Profile() {
   // CANCEL ORDER FUNCTION
   const cancelOrder = async (orderId) => {
     try {
-      await axios.put(`http://localhost:5000/orders/cancel/${orderId}`);
+      await axios.put(`https://food-delivery-app-j0eg.onrender.com/orders/cancel/${orderId}`);
 
       setOrders((prev) =>
         prev.map((order) =>
