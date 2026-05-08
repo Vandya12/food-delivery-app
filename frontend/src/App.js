@@ -12,7 +12,7 @@ function App() {
   const [cart, setCart] = useState(
     JSON.parse(localStorage.getItem("cart")) || [],
   );
-  const [address, setAddress] = useState("");
+
   // Fetch food items
   useEffect(() => {
     axios
