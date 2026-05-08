@@ -20,10 +20,7 @@ app.use(
 app.use(express.json());
 
 // MongoDB Connection
-mongoose
-  .connect(
-    "mongodb://dev_user:dev_123@ac-giq1aj8-shard-00-00.ps2lrny.mongodb.net:27017,ac-giq1aj8-shard-00-01.ps2lrny.mongodb.net:27017,ac-giq1aj8-shard-00-02.ps2lrny.mongodb.net:27017/foodapp?ssl=true&replicaSet=atlas-z8yyqe-shard-0&authSource=admin&retryWrites=true&w=majority",
-  )
+mongoose.connect(process.env.MONGO_URL)
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.log(err));
 
@@ -151,7 +148,7 @@ app.post("/login", async (req, res) => {
       });
     }
 
-    const token = jwt.sign({ id: user._id }, "secretkey", { expiresIn: "1d" });
+    const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: "1d" })
 
     res.json({
       token,
