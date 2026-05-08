@@ -8,11 +8,14 @@ function Signup() {
 
   const registerUser = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/register", {
-        name,
-        email,
-        password,
-      });
+      const res = await axios.post(
+        "https://food-delivery-app-j0eg.onrender.com/register",
+        {
+          name,
+          email,
+          password,
+        },
+      );
 
       alert(res.data.message);
 

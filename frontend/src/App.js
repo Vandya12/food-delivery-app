@@ -16,7 +16,7 @@ function App() {
   // Fetch food items
   useEffect(() => {
     axios
-      .get("http://localhost:5000/foods")
+      .get("https://food-delivery-app-j0eg.onrender.com/foods")
       .then((res) => setFoods(res.data))
       .catch((err) => console.log("Error fetching foods:", err));
   }, []);
@@ -73,7 +73,7 @@ function App() {
 
     setTimeout(() => {
       axios
-        .post("http://localhost:5000/orders", {
+        .post("https://food-delivery-app-j0eg.onrender.com/orders", {
           userEmail: user.email,
           items: groupedCart,
           total,

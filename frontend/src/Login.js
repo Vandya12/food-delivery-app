@@ -8,10 +8,13 @@ function Login() {
 
   const loginUser = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/login", {
-        email,
-        password,
-      });
+      const res = await axios.post(
+        "https://food-delivery-app-j0eg.onrender.com/login",
+        {
+          email,
+          password,
+        },
+      );
 
       localStorage.setItem("token", res.data.token);
 

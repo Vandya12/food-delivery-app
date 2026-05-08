@@ -58,7 +58,7 @@ function Cart() {
 
     setTimeout(() => {
       axios
-        .post("http://localhost:5000/orders", {
+        .post("https://food-delivery-app-j0eg.onrender.com/orders", {
           userEmail: user.email,
           items: groupedCart,
           total,
