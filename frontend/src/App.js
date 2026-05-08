@@ -51,47 +51,7 @@ function App() {
   );
 
   // Place order
-  const placeOrder = () => {
-    const user = JSON.parse(localStorage.getItem("user"));
 
-    if (!user) {
-      toast.warning("Please login first");
-      return;
-    }
-
-    if (!address) {
-      toast.warning("Please enter delivery address");
-      return;
-    }
-
-    if (cart.length === 0) {
-      toast.info("Cart is empty!");
-      return;
-    }
-
-    toast.info("Processing payment...");
-
-    setTimeout(() => {
-      axios
-        .post("https://food-delivery-app-j0eg.onrender.com/orders", {
-          userEmail: user.email,
-          items: groupedCart,
-          total,
-          address,
-          status: "Processing",
-        })
-        .then(() => {
-          toast.success("Payment successful! Order placed 🎉");
-
-          setCart([]);
-          localStorage.removeItem("cart");
-          setAddress("");
-        })
-        .catch(() => {
-          toast.error("Order failed");
-        });
-    }, 1500);
-  };
   const filteredFoods = foods.filter((food) => {
     const matchesSearch = food.name
       .toLowerCase()
