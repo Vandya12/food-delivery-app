@@ -63,6 +63,7 @@ function Cart() {
           items: groupedCart,
           total,
           address,
+          status: "Processing",
         })
         .then(() => {
           toast.success("Payment successful! Order placed 🎉");
@@ -122,7 +123,7 @@ function Cart() {
     <div
       style={{
         padding: "30px",
-        background: "#f5f5f5",
+        backgroundColor: "rgba(215, 153, 51, 0.8)",
         minHeight: "100vh",
       }}
     >

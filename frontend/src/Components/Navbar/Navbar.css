@@ -1,7 +1,7 @@
 .navbar {
   display: flex;
   justify-content: space-around;
-  padding: 2px;
+  padding: 1px;
   box-shadow: 0px 1px 3px -2px black;
   align-items: center;
 }
@@ -9,7 +9,7 @@
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0px;
 }
 .nav-logo img {
   height: 100px;
@@ -88,7 +88,7 @@
   margin-left: 20px;
   border-radius: 11px;
   font-size: 14px;
-  background: #39ff14;
+  background: #d79933;
   color: black;
 }
 .nav-dropdown {

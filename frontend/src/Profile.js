@@ -110,7 +110,9 @@ function Profile() {
   };
 
   return (
-    <div style={{ padding: "30px" }}>
+    <div
+      style={{ padding: "30px", backgroundColor: "rgba(215, 153, 51, 0.8)" }}
+    >
       <h1>Profile</h1>
 
       {/* User Info */}
@@ -120,6 +122,7 @@ function Profile() {
           border: "1px solid #ddd",
           borderRadius: "10px",
           marginBottom: "20px",
+          backgroundColor: "#D79933",
         }}
       >
         <h3>Name: {user.name}</h3>
@@ -143,7 +146,7 @@ function Profile() {
                 padding: "15px",
                 marginBottom: "20px",
                 borderRadius: "10px",
-                background: "#fafafa",
+                background: "#D79933",
               }}
             >
               {/* Status */}

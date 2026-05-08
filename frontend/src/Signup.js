@@ -68,7 +68,7 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    background: "linear-gradient(to right, #36d1dc, #5b86e5)",
+    background: "#D79933",
   },
 
   card: {
@@ -84,6 +84,7 @@ const styles = {
 
   title: {
     textAlign: "center",
+    color: "#7A431D",
   },
 
   input: {
@@ -96,7 +97,7 @@ const styles = {
     padding: "12px",
     border: "none",
     borderRadius: "8px",
-    background: "#5b86e5",
+    background: "#7A431D",
     color: "#fff",
     cursor: "pointer",
     fontSize: "16px",

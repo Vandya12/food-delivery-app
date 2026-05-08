@@ -28,7 +28,7 @@ function Login() {
   return (
     <div style={styles.container}>
       <div style={styles.card}>
-        <h1 style={styles.title}>Food Delivery Login</h1>
+        <h1 style={styles.title}>Welcome!</h1>
 
         <input
           type="email"
@@ -51,7 +51,7 @@ function Login() {
           style={{
             textAlign: "center",
             cursor: "pointer",
-            color: "blue",
+            color: "#D79933",
           }}
           onClick={() => {
             navigate("/signup");
@@ -70,7 +70,7 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    background: "linear-gradient(to right, #ff9966, #ff5e62)",
+    background: "#D79933",
   },
 
   card: {
@@ -86,7 +86,7 @@ const styles = {
 
   title: {
     textAlign: "center",
-    color: "#333",
+    color: "#7A431D",
   },
 
   input: {
@@ -98,7 +98,7 @@ const styles = {
 
   button: {
     padding: "12px",
-    background: "#ff4d4d",
+    background: "#7A431D",
     color: "#fff",
     border: "none",
     borderRadius: "8px",

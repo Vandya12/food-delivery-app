@@ -103,7 +103,7 @@ function App() {
   });
 
   return (
-    <div>
+    <div style={{ backgroundColor: "rgba(215, 153, 51, 0.8)" }}>
       {/* Navbar */}
 
       <div style={{ padding: 20 }}>

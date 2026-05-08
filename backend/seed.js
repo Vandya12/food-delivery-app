@@ -65,29 +65,38 @@ const imageMap = {
   "Masala Dosa":
     "https://images.pexels.com/photos/5560763/pexels-photo-5560763.jpeg",
   "Plain Dosa":
-    "https://images.pexels.com/photos/5410400/pexels-photo-5410400.jpeg",
+    "https://images.pexels.com/photos/32229637/pexels-photo-32229637.png",
   "Rava Dosa":
-    "https://images.pexels.com/photos/5410400/pexels-photo-5410400.jpeg",
-  Idli: "https://images.pexels.com/photos/5410412/pexels-photo-5410412.jpeg",
-  Vada: "https://images.pexels.com/photos/5410413/pexels-photo-5410413.jpeg",
+    "https://images.pexels.com/photos/15698223/pexels-photo-15698223.jpeg",
+  Idli: "https://images.pexels.com/photos/36854501/pexels-photo-36854501.jpeg",
+  Vada: "https://images.pexels.com/photos/20422135/pexels-photo-20422135.jpeg",
+  Pongal:
+    "https://media.istockphoto.com/id/2159685833/photo/ven-pongal-traditional-indian-savoury-rice-dish-made-during-celebrating-pongal-festival.jpg?s=612x612&w=0&k=20&c=gMwHQ62zjJiaFr7p3Vz0E-bPIfKG3zZLwbPj4Q7xRNI=",
+  "Lemon Rice":
+    "https://images.pexels.com/photos/4595312/pexels-photo-4595312.jpeg",
+  "Tomato Rice":
+    "https://images.pexels.com/photos/31109631/pexels-photo-31109631.jpeg",
+  "Curd Rice":
+    "https://images.pexels.com/photos/29684991/pexels-photo-29684991.jpeg",
   "Paneer Butter Masala":
-    "https://images.pexels.com/photos/9609844/pexels-photo-9609844.jpeg",
+    "https://images.pexels.com/photos/30858402/pexels-photo-30858402.jpeg",
   "Palak Paneer":
     "https://images.pexels.com/photos/9609843/pexels-photo-9609843.jpeg",
   "Dal Tadka":
     "https://images.pexels.com/photos/7625056/pexels-photo-7625056.jpeg",
-  Rajma: "https://images.pexels.com/photos/7625055/pexels-photo-7625055.jpeg",
+  Rajma: "https://images.pexels.com/photos/8992843/pexels-photo-8992843.jpeg",
   "Veg Biryani":
     "https://images.pexels.com/photos/12737656/pexels-photo-12737656.jpeg",
   "Fried Rice":
     "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg",
   "Veg Noodles":
-    "https://images.pexels.com/photos/955137/pexels-photo-955137.jpeg",
+    "https://images.pexels.com/photos/28674525/pexels-photo-28674525.jpeg",
   "Spring Roll":
     "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg",
   "Aloo Paratha":
     "https://images.pexels.com/photos/9609846/pexels-photo-9609846.jpeg",
-  Chapati: "https://images.pexels.com/photos/9609850/pexels-photo-9609850.jpeg",
+  Chapati:
+    "https://images.pexels.com/photos/20408462/pexels-photo-20408462.jpeg",
   Samosa: "https://images.pexels.com/photos/9609847/pexels-photo-9609847.jpeg",
   Dhokla: "https://images.pexels.com/photos/9609849/pexels-photo-9609849.jpeg",
   Burger: "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg",
