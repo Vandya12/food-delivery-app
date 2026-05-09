@@ -1,10 +1,13 @@
 import { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function Signup() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+
 
   const registerUser = async () => {
     try {
@@ -19,7 +22,7 @@ function Signup() {
 
       alert(res.data.message);
 
-      window.location.href = "/login";
+      navigate("https://food-delivery-app-j0eg.onrender.com/login");
     } catch (err) {
       console.log(err);
 
