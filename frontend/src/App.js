@@ -17,7 +17,13 @@ function App() {
   useEffect(() => {
     axios
       .get("https://food-delivery-app-j0eg.onrender.com/foods")
-      .then((res) => setFoods(res.data))
+      .then((res) =>
+        setFoods(
+          res.data.sort((a, b) =>
+            a.name.localeCompare(b.name),
+          ),
+        ),
+      )   
       .catch((err) => console.log("Error fetching foods:", err));
   }, []);
 
@@ -61,7 +67,17 @@ function App() {
 
     return matchesSearch && matchesCategory;
   });
+const uniqueFoods = [];
+const names = new Set();
 
+filteredFoods.forEach((food) => {
+  if (!names.has(food.name)) {
+    names.add(food.name);
+    uniqueFoods.push(food);
+  }
+});
+
+const displayFoods = uniqueFoods;
   return (
     <div style={{ backgroundColor: "rgba(215, 153, 51, 0.8)" }}>
       {/* Navbar */}
@@ -118,7 +134,7 @@ function App() {
             gap: "20px",
           }}
         >
-          {filteredFoods.map((f) => (
+          {displayFoods.map((f) => (
             <Item
               key={f._id}
               name={f.name}
