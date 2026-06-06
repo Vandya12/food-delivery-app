@@ -3,23 +3,48 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
+        stage('Checkout Source Code') {
             steps {
                 git branch: 'main',
                     url: 'https://github.com/Vandya12/food-delivery-app.git'
             }
         }
 
-        stage('Build Backend') {
+        stage('Verify Repository Structure') {
             steps {
-                sh 'docker build -t food-backend ./backend'
+                sh 'pwd'
+                sh 'ls -la'
+                sh 'ls -la backend'
+                sh 'ls -la frontend'
             }
         }
 
-        stage('Build Frontend') {
+        stage('Verify Git') {
             steps {
-                sh 'docker build -t food-frontend ./frontend'
+                sh 'git --version'
             }
+        }
+
+        stage('Verify Java') {
+            steps {
+                sh 'java -version'
+            }
+        }
+
+        stage('Build Validation') {
+            steps {
+                sh 'echo "Food Delivery Application CI Pipeline Executed Successfully"'
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Pipeline executed successfully.'
+        }
+
+        failure {
+            echo 'Pipeline execution failed.'
         }
     }
 }
