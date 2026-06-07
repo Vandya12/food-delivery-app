@@ -202,7 +202,7 @@ Add screenshots here:
 
 ### Home Page
 
-![Home Page](screenshots/App Interface.jpeg)
+![Home Page](screenshots/App_interface.jpeg)
 
 ### Docker Containers Running
 
