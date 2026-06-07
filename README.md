@@ -202,15 +202,15 @@ Add screenshots here:
 
 ### Home Page
 
-![Home Page](screenshots/home.png)
+![Home Page](screenshots/App Interface.jpeg)
 
 ### Docker Containers Running
 
-![Docker](screenshots/docker.png)
+![Docker](screenshots/docker.jpeg)
 
 ### Jenkins Successful Build
 
-![Jenkins](screenshots/jenkins-success.png)
+![Jenkins](screenshots/Jenkins.jpeg)
 
 ---
 
