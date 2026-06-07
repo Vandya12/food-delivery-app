@@ -5,8 +5,7 @@ pipeline {
 
         stage('Checkout Source Code') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/Vandya12/food-delivery-app.git'
+                checkout scm
             }
         }
 
@@ -33,19 +32,8 @@ pipeline {
 
         stage('Build Validation') {
             steps {
-                sh 'echo "Food Delivery Application CI Pipeline Executed Successfully"'
+                echo 'Food Delivery Application CI Pipeline Executed Successfully'
             }
         }
     }
-
-    post {
-        success {
-            echo 'Pipeline executed successfully.'
-        }
-
-        failure {
-            echo 'Pipeline execution failed.'
-        }
-    }
 }
-
