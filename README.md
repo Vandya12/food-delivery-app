@@ -214,24 +214,3 @@ Add screenshots here:
 
 ---
 
-## 🎯 Learning Outcomes
-
-Through this project, I gained hands-on experience with:
-
-- Full-Stack MERN Development
-- REST API Design
-- JWT Authentication
-- MongoDB Atlas Integration
-- Docker Containerization
-- Docker Compose Orchestration
-- Jenkins CI/CD Pipelines
-- GitHub Integration
-- Cloud Deployment using Render
-
----
-
-## 👨‍💻 Author
-
-**Vandya**
-
-GitHub: https://github.com/Vandya12
